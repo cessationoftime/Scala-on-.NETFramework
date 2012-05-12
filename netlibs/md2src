@@ -1,0 +1,5 @@
+#!/bin/sh
+scala -cp md2src.jar scala.tools.msil.md2src.Main System.dll
+scala -cp md2src.jar scala.tools.msil.md2src.Main System.Core.dll
+scala -cp md2src.jar scala.tools.msil.md2src.Main System.Xml.dll
+scala -cp md2src.jar scala.tools.msil.md2src.Main mscorlib.dll

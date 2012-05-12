@@ -1,0 +1,7 @@
+#!/bin/sh
+#./scalacompiler.exe -Ydebug -d . -target:<<library,exe>> -Ystruct-dispatch:no-cache -no-specialization -Xassem-name mine.dll -Xassem-extdirs .
+
+
+echo $WIN_BAR
+./netlibs/scalacompiler.exe -d $(cygpath -w $(pwd)) -Xassem-extdirs ./netlibs -Xassem-name Belmont -Xshow-class com.exiledstudios.MainTest ./src/com/exiledstudios/MainTest.scala
+ 
